@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Plan de Comidas para la Semana de {{ selectedDate | date }}</mat-card-title>
+    <mat-form-field appearance="fill">
+      <mat-label>Seleccionar Fecha</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  
+    <div *ngFor="let day of daysOfWeek">
+      <h3>{{ day }}</h3>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Desayuno</mat-label>
+          <input matInput [(ngModel)]="mealsPerDay[day].breakfast">
+        </mat-form-field>
+        <!-- Repetir para colación, comida, colación y cena -->
+      </div>
+    </div>
+  
+    <button mat-raised-button color="primary" (click)="saveMealPlan()">Guardar Plan</button>
+  </mat-card>
+  

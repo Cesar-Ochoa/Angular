@@ -1,0 +1,19 @@
+{
+    "diets": {
+      "lowCarb": {
+        "breakfast": ["Huevos revueltos", "Batido de proteínas"],
+        "snack": ["Almendras", "Yogur griego"],
+        "lunch": ["Ensalada de pollo", "Pescado a la plancha"],
+        "snack2": ["Palitos de apio", "Hummus"],
+        "dinner": ["Bistec con vegetales", "Sopa de verduras"]
+      },
+      "vegan": {
+        "breakfast": ["Avena con frutas", "Batido verde"],
+        "snack": ["Frutos secos", "Barra de cereales"],
+        "lunch": ["Ensalada de quinoa", "Tofu a la plancha"],
+        "snack2": ["Fruta fresca", "Smoothie de frutas"],
+        "dinner": ["Pasta integral con salsa de tomate", "Salteado de vegetales"]
+      }
+    }
+  }
+  
